@@ -1,0 +1,19 @@
+.vivaldi.button-toolbar {
+    position: initial;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#browser.win .extensions-wrapper .window-buttongroup {
+    position: inherit;
+}
+
+.toolbar #pagetitle {
+    text-align: center;
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
