@@ -17,3 +17,12 @@
     margin-top: auto;
     margin-bottom: auto;
 }
+
+button.pagetitle {
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+.toolbar .button-toolbar.home {
+    display: none;
+}
