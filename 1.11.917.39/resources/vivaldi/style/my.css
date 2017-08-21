@@ -18,11 +18,18 @@
     margin-bottom: auto;
 }
 
-button.pagetitle {
+.toolbar button.pagetitle {
     flex-grow: 1;
     flex-basis: auto;
+    height: 25px;
+    margin-top: auto;
 }
 
 .toolbar .button-toolbar.home {
     display: none;
 }
+
+.toolbar-addressbar .extensions-wrapper .button-toolbar.browserAction-button {
+    background-color: transparent;
+}
+
