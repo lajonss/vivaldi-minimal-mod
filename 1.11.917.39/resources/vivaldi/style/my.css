@@ -29,7 +29,7 @@
     display: none;
 }
 
-.toolbar-addressbar .extensions-wrapper .button-toolbar.browserAction-button {
+.toolbar-addressbar .button-toolbar.browserAction-button {
     background-color: transparent;
 }
 
