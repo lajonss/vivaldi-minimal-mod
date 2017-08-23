@@ -4,6 +4,7 @@
     margin-bottom: auto;
 }
 
+#browser.win.win10 .extensions-wrapper .window-buttongroup,
 #browser.win .extensions-wrapper .window-buttongroup {
     position: inherit;
 }
@@ -32,4 +33,5 @@
 .toolbar-addressbar .extensions-wrapper .button-toolbar.browserAction-button {
     background-color: transparent;
 }
+
 
