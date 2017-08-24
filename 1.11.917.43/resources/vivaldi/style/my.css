@@ -5,7 +5,8 @@
 }
 
 #browser.win.win10 .extensions-wrapper .window-buttongroup,
-#browser.win .extensions-wrapper .window-buttongroup {
+#browser.win .extensions-wrapper .window-buttongroup
+.toolbar-addressbar.toolbar .window-buttongroup {
     position: inherit;
 }
 
