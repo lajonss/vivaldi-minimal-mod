@@ -9,6 +9,7 @@ function setupLayout() {
     var addressFieldInput = addressField.querySelector('input');
     var extensions = toolbar.children[3];
     var pageTitleButton = createPageTitleButton();
+    var bookmarkContainer = addressField.querySelector('.add-bookmark-container');
 
     function createPageTitleButton() {
 	var button = document.createElement('button');
@@ -51,9 +52,17 @@ function setupLayout() {
 	pageTitleButton.appendChild(pageTitle);
     }
 
+    function setupBookmarkButton() {
+	var span = document.createElement('span');
+	span.classList.add('bookmark-container-span');
+	extensions.insertBefore(span, extensions.firstChild);
+	span.appendChild(bookmarkContainer);
+    }
+
     setupMenuButton();
     extensions.appendChild(windowButtons);
     setupPageTitle();
+    setupBookmarkButton();
     setupDynamicAddressBar();
     header.appendChild(toolbar);
     chrome.tabs.onCreated.addListener(discoverNewTab);
