@@ -19,13 +19,15 @@ function setupLayout() {
     }
     
     function showAddress() {
-	addressField.style.display = 'flex';
+	addressFieldInput.style.display = 'inline-block';
+	addressField.style.flexGrow = '1';
 	pageTitleButton.style.display = 'none';
 	addressFieldInput.focus();
     }
 
     function hideAddress() {
-	addressField.style.display = 'none';
+	addressField.style.flexGrow = '0';
+	addressFieldInput.style.display = 'none';
 	pageTitleButton.style.display = 'block';
     }
 
@@ -35,8 +37,8 @@ function setupLayout() {
     }
 
     function setupDynamicAddressBar() {
-	addressField.style.display = 'none';
-	
+	hideAddress();
+
 	addressFieldInput.addEventListener('blur', hideAddress);
 	addressFieldInput.addEventListener('focus', showAddress);
 	pageTitleButton.addEventListener('click', showAddress);
@@ -52,17 +54,9 @@ function setupLayout() {
 	pageTitleButton.appendChild(pageTitle);
     }
 
-    function setupBookmarkButton() {
-	var span = document.createElement('span');
-	span.classList.add('bookmark-container-span');
-	extensions.insertBefore(span, extensions.firstChild);
-	span.appendChild(bookmarkContainer);
-    }
-
     setupMenuButton();
     extensions.appendChild(windowButtons);
     setupPageTitle();
-    //setupBookmarkButton();
     setupDynamicAddressBar();
     header.appendChild(toolbar);
     chrome.tabs.onCreated.addListener(discoverNewTab);
