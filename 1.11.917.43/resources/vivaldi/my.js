@@ -62,7 +62,7 @@ function setupLayout() {
     setupMenuButton();
     extensions.appendChild(windowButtons);
     setupPageTitle();
-    setupBookmarkButton();
+    //setupBookmarkButton();
     setupDynamicAddressBar();
     header.appendChild(toolbar);
     chrome.tabs.onCreated.addListener(discoverNewTab);
