@@ -40,18 +40,18 @@
     background-color: transparent;
 }
 
-.addressfield {
+.toolbar .addressfield {
     flex-grow: 0;
 }
 
-.show-address .addressfield {
+.toolbar.show-address .addressfield {
     flex-grow: 1;
 }
 
-.addressfield input {
+.toolbar .addressfield input {
     display: none;
 }
 
-.show-address .addressfield input {
+.toolbar.show-address .addressfield input {
     display: inline-block;
 }
