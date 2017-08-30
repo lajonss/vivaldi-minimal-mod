@@ -25,6 +25,11 @@
     flex-basis: auto;
     height: 25px;
     margin-top: auto;
+    display: block;
+}
+
+.toolbar.show-address button.pagetitle {
+    display: none;
 }
 
 .toolbar .button-toolbar.home {
@@ -35,7 +40,18 @@
     background-color: transparent;
 }
 
-.bookmark-container-span {
-    margin-top: auto;
-    margin-bottom: auto;
+.addressfield {
+    flex-grow: 0;
+}
+
+.show-address .addressfield {
+    flex-grow: 1;
+}
+
+.addressfield input {
+    display: none;
+}
+
+.show-address .addressfield input {
+    display: inline-block;
 }

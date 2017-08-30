@@ -19,16 +19,12 @@ function setupLayout() {
     }
     
     function showAddress() {
-	addressFieldInput.style.display = 'inline-block';
-	addressField.style.flexGrow = '1';
-	pageTitleButton.style.display = 'none';
+	toolbar.classList.add('show-address');
 	addressFieldInput.focus();
     }
 
     function hideAddress() {
-	addressField.style.flexGrow = '0';
-	addressFieldInput.style.display = 'none';
-	pageTitleButton.style.display = 'block';
+	toolbar.classList.remove('show-address');
     }
 
     function discoverNewTab(tabCreatedEvent) {
