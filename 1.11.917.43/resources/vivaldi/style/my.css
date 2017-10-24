@@ -11,6 +11,10 @@
     position: inherit;
 }
 
+#browser.linux .extensions-wrapper .window-buttongroup {
+    display: none;
+}
+
 .toolbar #pagetitle {
     text-align: center;
     position: relative;
