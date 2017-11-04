@@ -11,7 +11,8 @@
     position: inherit;
 }
 
-#browser.linux .extensions-wrapper .window-buttongroup {
+#browser.linux .extensions-wrapper .window-buttongroup,
+#browser.linux .toolbar .window-buttongroup {
     display: none;
 }
 
